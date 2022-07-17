@@ -55,13 +55,14 @@
   "dependencies": {
     "prop-types": "^15.8.1",
     "react": "^18.2.0"
-  },  "release-it": {
+  },
+  "release-it": {
     "github": {
       "release": true,
       "update": true
     },
     "npm": {
-      "publish": true
+      "publish": false
     }
   }
 }

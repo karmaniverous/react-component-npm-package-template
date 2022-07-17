@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src -d lib",
-    "release": "dotenv -c -- release-it",
+    "release": "dotenv -c development -- release-it",
     "test": "mocha './{,!(node_modules)/**}/*.test.*js*'"
   },
   "repository": {

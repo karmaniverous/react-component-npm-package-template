@@ -1,5 +1,5 @@
 {
-  "name": "@karmaniverous/template-react-component",
+  "name": "@karmaniverous/react-component-template",
   "version": "0.0.2",
   "description": "",
   "main": "lib/index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:karmaniverous/template-react-component.git"
+    "url": "git@github.com:karmaniverous/react-component-template.git"
   },
   "keywords": [],
   "author": "Jason G. Williscroft",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/karmaniverous/template-react-component/issues"
+    "url": "https://github.com/karmaniverous/react-component-template/issues"
   },
-  "homepage": "https://github.com/karmaniverous/template-react-component#readme",
+  "homepage": "https://github.com/karmaniverous/react-component-template#readme",
   "devDependencies": {
     "@babel/cli": "^7.18.6",
     "@babel/core": "^7.18.6",
@@ -58,8 +58,7 @@
   },
   "release-it": {
     "github": {
-      "release": true,
-      "update": true
+      "release": true
     },
     "npm": {
       "publish": false

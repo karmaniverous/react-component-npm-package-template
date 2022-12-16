@@ -8,5 +8,9 @@
       }
     ]
   ],
-  "plugins": ["lodash", ["module-extension", { "mjs": "" }]]
+  "plugins": [
+    "@babel/plugin-syntax-import-assertions",
+    "lodash",
+    ["module-extension", { "mjs": "" }]
+  ]
 }

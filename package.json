@@ -54,6 +54,7 @@
     "spec": "./{,!(node_modules)/**}/*.test.*js*"
   },
   "dependencies": {
+    "lodash": "^4.17.21",
     "prop-types": "^15.8.1",
     "react": "^18.2.0"
   },

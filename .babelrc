@@ -8,5 +8,5 @@
       }
     ]
   ],
-  "plugins": [["module-extension", { "mjs": "" }]]
+  "plugins": ["lodash", ["module-extension", { "mjs": "" }]]
 }

@@ -16,17 +16,37 @@ let user;
 let myComponent;
 
 describe('component', async () => {
-  beforeEach(async () => {
-    ({ getByTestId } = render(<Component testid="myComponent" />));
+  describe('missing testid', async () => {
+    beforeEach(async () => {
+      ({ getByTestId } = render(<Component />));
 
-    user = UserEvent.setup();
+      user = UserEvent.setup();
 
-    myComponent = getByTestId('myComponent');
+      myComponent = getByTestId('nil');
+    });
+
+    it('renders', async () => {
+      myComponent.innerHTML.should.equal('Component');
+    });
   });
 
-  it('is unaffected by click', async () => {
-    user.click(myComponent);
+  describe('with testid', async () => {
+    beforeEach(async () => {
+      ({ getByTestId } = render(<Component testid="myComponent" />));
 
-    myComponent.innerHTML.should.equal('Component');
+      user = UserEvent.setup();
+
+      myComponent = getByTestId('myComponent');
+    });
+
+    it('renders', async () => {
+      myComponent.innerHTML.should.equal('Component');
+    });
+
+    it('is unaffected by click', async () => {
+      user.click(myComponent);
+
+      myComponent.innerHTML.should.equal('Component');
+    });
   });
 });

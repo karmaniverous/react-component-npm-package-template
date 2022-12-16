@@ -1,7 +1,10 @@
 {
-  "name": "@karmaniverous/react-component-template",
-  "version": "0.1.0",
+  "name": "@karmaniverous/react-component-npm-package-template",
   "description": "",
+  "version": "0.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src -d lib",
@@ -10,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:karmaniverous/react-component-template.git"
+    "url": "git@github.com:karmaniverous/react-component-npm-package-template.git"
   },
   "keywords": [
     "react",
@@ -25,9 +28,9 @@
   "author": "Jason G. Williscroft",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/karmaniverous/react-component-template/issues"
+    "url": "https://github.com/karmaniverous/react-component-npm-package-template/issues"
   },
-  "homepage": "https://github.com/karmaniverous/react-component-template#readme",
+  "homepage": "https://github.com/karmaniverous/react-component-npm-package-template#readme",
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.20.5",
@@ -72,7 +75,7 @@
       "release": true
     },
     "npm": {
-      "publish": false
+      "publish": true
     }
   }
 }

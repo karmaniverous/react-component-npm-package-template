@@ -12,7 +12,16 @@
     "type": "git",
     "url": "git@github.com:karmaniverous/react-component-template.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "testing",
+    "template",
+    "npm",
+    "package",
+    "mocha",
+    "chai",
+    "release"
+  ],
   "author": "Jason G. Williscroft",
   "license": "ISC",
   "bugs": {

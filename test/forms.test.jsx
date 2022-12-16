@@ -15,9 +15,9 @@ let getByTestId;
 let user;
 let myComponent;
 
-describe('component', async () => {
-  describe('missing testid', async () => {
-    beforeEach(async () => {
+describe('component', function () {
+  describe('missing testid', function () {
+    beforeEach(function () {
       ({ getByTestId } = render(<Component />));
 
       user = UserEvent.setup();
@@ -25,13 +25,13 @@ describe('component', async () => {
       myComponent = getByTestId('nil');
     });
 
-    it('renders', async () => {
+    it('renders', function () {
       myComponent.innerHTML.should.equal('Component');
     });
   });
 
-  describe('with testid', async () => {
-    beforeEach(async () => {
+  describe('with testid', function () {
+    beforeEach(function () {
       ({ getByTestId } = render(<Component testid="myComponent" />));
 
       user = UserEvent.setup();
@@ -39,11 +39,11 @@ describe('component', async () => {
       myComponent = getByTestId('myComponent');
     });
 
-    it('renders', async () => {
+    it('renders', function () {
       myComponent.innerHTML.should.equal('Component');
     });
 
-    it('is unaffected by click', async () => {
+    it('is unaffected by click', function () {
       user.click(myComponent);
 
       myComponent.innerHTML.should.equal('Component');

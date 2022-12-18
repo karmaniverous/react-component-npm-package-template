@@ -10,15 +10,20 @@ features:
 
 - Support for the latest ES6 + JSX goodies with
   [`eslint`](https://www.npmjs.com/package/eslint) _uber alles_.
+
 - Automated [`lodash`](https://www.npmjs.com/package/lodash) cherry-picking with
   [`babel-plugin-lodash`](https://www.npmjs.com/package/babel-plugin-lodash).
+
 - Front & back-end testing with [`mocha`](https://www.npmjs.com/package/mocha),
   [`chai`](https://www.npmjs.com/package/chai), and the
-  [React testing Library](https://www.npmjs.com/package/@testing-library/react).
+  [React Testing Library](https://www.npmjs.com/package/@testing-library/react).
   Includes examples and a sweet testing console!
+
 - Secure environment-variable access to [`package.json`](./package.json) data.
+
 - Code formatting at every save & paste with
   [`prettier`](https://www.npmjs.com/package/prettier).
+
 - One-button release to GitHub & publish to NPM with
   [`release-it`](https://www.npmjs.com/package/release-it).
 
@@ -166,6 +171,18 @@ reflect your `describe` hierarchy. It will also decorate your test source code
 with test running and status reporting controls.
 
 <img src="readme/testing-panel.png" width="600">
+
+### Front-End Tests
+
+This template supports front-end React component testing using the
+[React Testing Library](https://www.npmjs.com/package/@testing-library/react)
+(RTL). This library allows your tests to interact with your component in a
+headless browser environment.
+
+See [`Component.test.jsx`](./src/Component/Component.test.jsx) for a simple
+example, and visit the
+[RTL documentation](https://testing-library.com/docs/react-testing-library/intro/)
+for more info!
 
 ## Integration-Test Your Package
 

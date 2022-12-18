@@ -1,20 +1,19 @@
 {
   "name": "@karmaniverous/react-component-npm-package-template",
-  "description": "",
   "version": "0.1.0",
   "publishConfig": {
     "access": "public"
-  },
-  "main": "lib/index.js",
-  "scripts": {
-    "build": "babel src -d lib",
-    "release": "dotenv -c -- release-it",
-    "test": "mocha"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:karmaniverous/react-component-npm-package-template.git"
   },
+  "author": "Jason G. Williscroft",
+  "bugs": {
+    "url": "https://github.com/karmaniverous/react-component-npm-package-template/issues"
+  },
+  "description": "An ES6 React component NPM package template. Support for Mocha + Chai + React Testing Framework & release/package publishing via release-it.",
+  "homepage": "https://github.com/karmaniverous/react-component-npm-package-template#readme",
   "keywords": [
     "react",
     "testing",
@@ -25,12 +24,12 @@
     "chai",
     "release"
   ],
-  "author": "Jason G. Williscroft",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/karmaniverous/react-component-npm-package-template/issues"
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0"
   },
-  "homepage": "https://github.com/karmaniverous/react-component-npm-package-template#readme",
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.20.5",
@@ -58,17 +57,13 @@
     "prettier": "^2.8.1",
     "release-it": "^15.5.1"
   },
+  "main": "lib/index.js",
   "mocha": {
     "require": [
       "@babel/register",
       "global-jsdom/register"
     ],
     "spec": "./{,!(node_modules)/**}/*.test.*js*"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21",
-    "prop-types": "^15.8.1",
-    "react": "^18.2.0"
   },
   "release-it": {
     "github": {
@@ -77,5 +72,10 @@
     "npm": {
       "publish": true
     }
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "release": "dotenv -c -- release-it",
+    "test": "mocha"
   }
 }

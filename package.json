@@ -74,7 +74,7 @@
     }
   },
   "scripts": {
-    "build": "babel src -d lib",
+    "build": "rimraf ./lib && babel src -d lib",
     "release": "dotenv -c -- release-it",
     "test": "mocha"
   }

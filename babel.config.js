@@ -5,6 +5,7 @@ module.exports = (api) => {
   api.cache.never();
 
   return {
+    ignore: [/\.test\.\w+$/],
     presets: [
       '@babel/preset-env',
       [

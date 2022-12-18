@@ -9,13 +9,13 @@ import chai from 'chai';
 chai.should();
 
 // subject imports
-import { Component } from '../src';
+import Component from './Component';
 
 let getByTestId;
 let user;
 let myComponent;
 
-describe('component', function () {
+describe('Component', function () {
   describe('missing testid', function () {
     beforeEach(function () {
       ({ getByTestId } = render(<Component />));

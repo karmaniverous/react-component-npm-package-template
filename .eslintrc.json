@@ -19,7 +19,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["mocha", "promise", "react"],
+  "plugins": ["jsx", "mocha", "promise", "react"],
   "rules": { "react/jsx-uses-react": "off", "react/react-in-jsx-scope": "off" },
   "settings": {
     "react": {

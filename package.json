@@ -59,11 +59,15 @@
   },
   "main": "lib/index.js",
   "mocha": {
+    "ignore": [
+      "./lib/**",
+      "./node_modules/**"
+    ],
     "require": [
       "@babel/register",
       "global-jsdom/register"
     ],
-    "spec": "./{,!(node_modules)/**}/*.test.*js*"
+    "spec": "**/*.test.*js*"
   },
   "release-it": {
     "github": {
@@ -74,7 +78,7 @@
     }
   },
   "scripts": {
-    "build": "rimraf ./lib && babel src -d lib",
+    "build": "rimraf ./lib && babel src -d lib --ignore **/*.test.cjs,**/*.test.js,**/*.test.jsx,**/*.test.mjs,**/*.test.ts,**/*.test.tsx",
     "release": "dotenv -c -- release-it",
     "test": "mocha"
   }

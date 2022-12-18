@@ -78,7 +78,7 @@
     }
   },
   "scripts": {
-    "build": "rimraf ./lib && babel src -d lib --ignore **/*.test.cjs,**/*.test.js,**/*.test.jsx,**/*.test.mjs,**/*.test.ts,**/*.test.tsx",
+    "build": "rimraf ./lib && babel src -d lib --config-file ./build.config.js",
     "release": "dotenv -c -- release-it",
     "test": "mocha"
   }

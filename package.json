@@ -59,15 +59,15 @@
   },
   "main": "lib/index.js",
   "mocha": {
-    "ignore": [
-      "./lib/**",
-      "./node_modules/**"
+    "exclude": [
+      "./lib/**/*",
+      "./node_modules/**/*"
     ],
     "require": [
       "@babel/register",
       "global-jsdom/register"
     ],
-    "spec": "**/*.test.*js*"
+    "spec": "./**/*.test.!(*.*)"
   },
   "release-it": {
     "github": {

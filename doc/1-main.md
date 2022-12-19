@@ -32,9 +32,9 @@ features:
 - One-button release to GitHub & publish to NPM with
   [`release-it`](https://www.npmjs.com/package/release-it).
 
-**[Click here](https://karmanivero.us/blog/npm-package-template/) for full
-template documentation & instructions!**
+**[Click here](https://karmanivero.us/blog/react-component-npm-package-template/)
+for full template documentation & instructions!**
 
 _If you want to create a non-React NPM package, try my regular
-[NPM Package Template](https://github.com/karmaniverous/react-component-npm-package-template)
+[NPM Package Template](https://github.com/karmaniverous/npm-package-template)
 instead!_

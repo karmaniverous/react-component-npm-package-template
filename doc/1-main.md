@@ -38,24 +38,3 @@ template documentation & instructions!**
 _If you want to create a non-React NPM package, try my regular
 [NPM Package Template](https://github.com/karmaniverous/react-component-npm-package-template)
 instead!_
-
-# Command Line Interface
-
-```text
-Usage: mycli [options]
-
-Foos your bar.
-
-Options:
-  -b, --bar <string>  foo what?
-  -v, --version       display package version
-  -h, --help          display help for command
-```
-
-# API Documentation
-
-
----
-
-See more great templates and other tools on
-[my GitHub Profile](https://github.com/karmaniverous)!

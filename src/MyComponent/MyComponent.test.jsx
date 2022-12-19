@@ -9,16 +9,18 @@ import chai from 'chai';
 chai.should();
 
 // subject imports
-import Component from './Component';
+import MyComponent from './MyComponent';
+
+const content = 'Hello, World!';
 
 let getByTestId;
-let user;
 let myComponent;
+let user;
 
-describe('Component', function () {
+describe('MyComponent', function () {
   describe('missing testid', function () {
     beforeEach(function () {
-      ({ getByTestId } = render(<Component />));
+      ({ getByTestId } = render(<MyComponent>{content}</MyComponent>));
 
       user = UserEvent.setup();
 
@@ -26,13 +28,15 @@ describe('Component', function () {
     });
 
     it('renders', function () {
-      myComponent.innerHTML.should.equal('Component');
+      myComponent.innerHTML.should.equal(content);
     });
   });
 
   describe('with testid', function () {
     beforeEach(function () {
-      ({ getByTestId } = render(<Component testid="myComponent" />));
+      ({ getByTestId } = render(
+        <MyComponent testid="myComponent">{content}</MyComponent>
+      ));
 
       user = UserEvent.setup();
 
@@ -40,13 +44,13 @@ describe('Component', function () {
     });
 
     it('renders', function () {
-      myComponent.innerHTML.should.equal('Component');
+      myComponent.innerHTML.should.equal(content);
     });
 
     it('is unaffected by click', function () {
       user.click(myComponent);
 
-      myComponent.innerHTML.should.equal('Component');
+      myComponent.innerHTML.should.equal(content);
     });
   });
 });

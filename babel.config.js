@@ -17,7 +17,6 @@ module.exports = (api) => {
           runtime: 'automatic',
         },
       ],
-      'minify',
     ],
     plugins: [
       '@babel/plugin-syntax-import-assertions',

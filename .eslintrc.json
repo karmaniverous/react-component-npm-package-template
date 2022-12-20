@@ -11,6 +11,7 @@
     "plugin:react/recommended",
     "plugin:react/jsx-runtime"
   ],
+  "ignorePatterns": ["/lib/**/*.*"],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaFeatures": {

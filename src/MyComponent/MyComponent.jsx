@@ -7,11 +7,11 @@ import PropTypes from 'prop-types';
  * Using lodash purely to demonstrate Babel cherry-picking.
  *
  * @component
+ *
  * @example
- * const testid = 'test'
- * return (
- *   <MyComponent testid={testid}>Hello, world!</MyComponent>
- * )
+ * <MyComponent testid="testid">Hello, world!</MyComponent>;
+ *
+ * // <h1 data-testid="testid">Hello, world!</h1>
  */
 const MyComponent = ({ children, testid }) => {
   return <h1 data-testid={_.isNil(testid) ? 'nil' : testid}>{children}</h1>;

@@ -1,5 +1,9 @@
 # API Documentation
 
+```js
+import { MyComponent } from '@karmaniverous/react-component-npm-package-template`;
+```
+
 <a name="MyComponent"></a>
 
 ## MyComponent()
@@ -9,5 +13,5 @@ Wraps children in an <h1> tag with a specified data-test-id attribute.Using lod
 **Component**:   
 **Example**  
 ```js
-const testid = 'test'return (  <MyComponent testid={testid}>Hello, world!</MyComponent>)
+<MyComponent testid="testid">Hello, world!</MyComponent>;// <h1 data-testid="testid">Hello, world!</h1>
 ```

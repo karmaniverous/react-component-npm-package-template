@@ -61,7 +61,7 @@
     "release-it": "^15.5.1",
     "rimraf": "^3.0.2"
   },
-  "main": "lib/index.js",
+  "main": "lib/export/index.js",
   "mocha": {
     "exclude": [
       "./lib/**/*",

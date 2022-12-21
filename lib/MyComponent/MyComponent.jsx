@@ -3,7 +3,7 @@ import _ from 'lodash';
 import PropTypes from 'prop-types';
 
 /**
- * Wraps children in an <h1> tag with a specified data-test-id attribute.
+ * Wraps children in an `h1` tag with a specified `data-test-id` attribute.
  * Using lodash purely to demonstrate Babel cherry-picking.
  *
  * @component
@@ -24,7 +24,7 @@ MyComponent.propTypes = {
   children: PropTypes.node,
 
   /**
-   * <h1> data-test-id attribute, defaults to 'nil'.
+   * h1 data-test-id attribute, defaults to 'nil'.
    */
   testid: PropTypes.string,
 };

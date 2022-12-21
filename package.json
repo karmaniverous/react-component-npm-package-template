@@ -56,8 +56,7 @@
     "jsdom": "^20.0.3",
     "mocha": "^10.2.0",
     "prettier": "^2.8.1",
-    "release-it": "^15.5.1",
-    "rimraf": "^3.0.2"
+    "release-it": "^15.5.1"
   },
   "exports": {
     ".": "./dist/default/lib/index.js"

@@ -19,8 +19,6 @@ features:
   [React Testing Library](https://www.npmjs.com/package/@testing-library/react).
   Includes examples and a sweet testing console!
 
-- Secure environment-variable access to [`package.json`](./package.json) data.
-
 - Code formatting at every save & paste with
   [`prettier`](https://www.npmjs.com/package/prettier).
 

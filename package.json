@@ -61,6 +61,7 @@
   "exports": {
     ".": "./dist/default/lib/index.js"
   },
+  "main": "./dist/default/lib/index.js",
   "mocha": {
     "exclude": [
       "./dist/**/*",

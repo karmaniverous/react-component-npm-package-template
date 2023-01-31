@@ -6,8 +6,10 @@ import PropTypes from 'prop-types';
  * Wraps children in an `h1` tag with a specified `data-test-id` attribute.
  * Using lodash purely to demonstrate Babel cherry-picking.
  *
- * @component
- *
+ * @param {object} [props] -
+ * @param {object} [props.children] -
+ * @param {string} [props.testid] -
+ * @returns {object} MyComponent
  * @example
  * <MyComponent testid="testid">Hello, world!</MyComponent>;
  *

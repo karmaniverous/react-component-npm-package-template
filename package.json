@@ -49,6 +49,7 @@
     "dotenv-cli": "^6.0.0",
     "eslint": "^8.30.0",
     "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-jsdoc": "^39.7.4",
     "eslint-plugin-mocha": "^10.1.0",
     "eslint-plugin-react": "^7.31.11",
     "global-jsdom": "^8.6.0",
